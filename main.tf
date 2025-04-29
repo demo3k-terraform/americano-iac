@@ -1,7 +1,7 @@
 module "vpc" {
   source  = "app.terraform.io/tf-advanced-labs-demo3k/tuesday-network/aws"
   version = "1.0.1"
-  app_prefix     = var.env_prefix
+  app_prefix     = "MOD-${var.env_prefix}"
   subnet_count   = var.subnet_count
 }
 
